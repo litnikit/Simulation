@@ -1,0 +1,12 @@
+﻿  The vcpkg manifest was disabled, but we found a manifest file in C:\Users\litni\source\repos\Pet_1\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  Object.cpp
+  System.cpp
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244:         with
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244:         [
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244:             T=float
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244:         ]
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(72,14): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  main.cpp
+  Создание кода...
+  Pet_1.vcxproj -> C:\Users\litni\source\repos\Pet_1\x64\Debug\Pet_1.exe
