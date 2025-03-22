@@ -22,7 +22,7 @@ int main() {
         .vel(sf::Vector2f(10.f, 0.f))
         .acc(sf::Vector2f(0.f, 9.81f))
         .mass(10.f)
-        .shape(sf::Color::Red, 30.f, sf::Vector2f(20.f, 200.f)).build();
+        .shape(sf::Color::Red, 30.f, sf::Vector2f(30.f, 200.f)).build();
     system.add_obj(obj_2);
 
     Object obj_3 = Object::builder()
@@ -56,6 +56,22 @@ int main() {
         .mass(10.f)
         .shape(sf::Color::Black, 30.f, sf::Vector2f(400.f, 200.f)).build();
     system.add_obj(obj_6);
+
+    Object obj_7 = Object::builder()
+        .name("É")
+        .vel(sf::Vector2f(13.f, 0.f))
+        .acc(sf::Vector2f(0.f, 9.81f))
+        .mass(100.f)
+        .shape(sf::Color::Blue, 60.f, sf::Vector2f(200.f, 600.f)).build();
+    system.add_obj(obj_7);
+
+    Object obj_8 = Object::builder()
+        .name("É")
+        .vel(sf::Vector2f(13.f, 0.f))
+        .acc(sf::Vector2f(0.f, 9.81f))
+        .mass(100.f)
+        .shape(sf::Color::Blue, 60.f, sf::Vector2f(600.f, 600.f)).build();
+    system.add_obj(obj_8);
 
     sf::Clock fps_clock;
     sf::Clock step_clock;

@@ -2,23 +2,50 @@
 #include <cmath>
 #include <iostream>
 
-System::System(sf::Vector2i border) : objects(std::vector<Object>()), border(border) {}
+System::System(sf::Vector2i border) : objects(std::vector<Object>()), border(border) {
+	border_ns[0] = sf::Vector2f(0, 1);
+	border_ns[1] = sf::Vector2f(-1, 0);
+	border_ns[2] = sf::Vector2f(0, -1);
+	border_ns[3] = sf::Vector2f(1, 0);
+}
 
 float dot(const sf::Vector2f& v1, const sf::Vector2f& v2) {
 	return v1.x * v2.x + v1.y * v2.y;
 }
 
-bool System::is_collide(const Object& o1, const Object& o2) {
-	sf::Vector2f r = o1.pos - o2.pos;
-	return (std::sqrt(dot(r, r)) < o1.rad + o2.rad);
+float norm(const sf::Vector2f& v1) {
+	return std::sqrt(dot(v1, v1));
 }
 
-sf::Vector2f System::is_collide_border(const Object& obj) {
-	if (obj.pos.x <= obj.rad) return sf::Vector2f(1, 0);
-	if (obj.pos.y <= obj.rad) return sf::Vector2f(0, 1);
-	if (obj.pos.x + obj.rad >= border.x) return sf::Vector2f(-1, 0);
-	if (obj.pos.y + obj.rad >= border.y) return sf::Vector2f(0, -1);
-	return sf::Vector2f(0, 0);
+float System::is_collide(const Object& o1, const Object& o2, const float& dt) {
+	sf::Vector2f x = o1.pos - o2.pos, v = o1.vel - o2.vel;
+	float R = o1.rad + o2.rad;
+	float c = (x.x * v.y - x.y * v.x) / (R * norm(v));
+	if (std::fabs(c) > 1) return dt + 1;
+
+	float angle_1 = std::acos(c) - std::acos(v.y / norm(v)),
+		  angle_2 = std::acos(c) + std::acos(v.y / norm(v));
+
+	float t_1 = R / v.x * std::cos(angle_1) - x.x / v.x,
+		  t_2 = R / v.x * std::cos(angle_2) - x.x / v.x;
+	if (t_1 < 0 || t_2 < 0) return dt + 1;
+	return std::fmin(t_1, t_2);
+}
+
+float System::is_collide_border(const Object& obj, const sf::Vector2f& n, const float& dt) {
+	int sgn = n.x + n.y;
+	float c = -(sgn - 1) / 2 * (n.x * border.x + n.y * border.y);
+	float v = dot(obj.vel, n), a = dot(obj.acc, n), x = dot(obj.pos, n);
+	float border_distance = -x + obj.rad + c;
+	float t_collide;
+
+	if (a != 0.f) {
+		float D = v * v + 2 * a * border_distance;
+		t_collide = D >= 0 ? (-v - std::sqrt(D)) / a : dt + 1;
+	}
+	else t_collide = border_distance / v;
+
+	return (t_collide >= dt || t_collide <= 0) ? dt + 1: t_collide;
 }
 
 
@@ -28,41 +55,46 @@ void System::add_obj(const Object& obj) {
 }
 
 void System::calc_vel(const float& dt) {
+
+	std::vector<std::vector<float>> t_collide_ball(objects.size(), std::vector<float>(objects.size()));
+	std::vector<std::vector<float>> t_collide_border(objects.size(), std::vector<float>(4));
+
+	float t_min = dt;
 	for (int i = 0; i < objects.size(); i++) {
-
-		auto& obj_1 = objects[i];
-
-		sf::Vector2f n = is_collide_border(obj_1);
-
-		if (n != sf::Vector2f(0, 0)) {
-
-			int sgn = n.x + n.y;
-			float c = -(sgn - 1) / 2 * (n.x * border.x + n.y * border.y);
-			float v = dot(obj_1.vel, n), a = dot(obj_1.acc, n), x = dot(obj_1.pos, n);
-			float border_distance = -x + obj_1.rad + c;
-			float t_collide = (a != 0.f) ? 
-				(-v - std::sqrt(v * v + 2 * a * border_distance)) / a :
-				border_distance / v;
-
-			obj_1.move_obj(t_collide);
-			obj_1.vel -= 2 * dot(obj_1.vel, n) * n;
-			if(t_collide < 0) obj_1.move_obj(dt + t_collide);
+		for (int j = 0; j < 4; j++) {
+			t_collide_border[i][j] = is_collide_border(objects[i], border_ns[j], dt);
+			t_min = t_collide_border[i][j] < t_min ? t_collide_border[i][j] : t_min;
 		}
 
 		for (int j = i + 1; j < objects.size(); j++) {
+			t_collide_ball[i][j] = is_collide(objects[i], objects[j], dt);
+			t_min = t_collide_ball[i][j] < t_min ? t_collide_ball[i][j] : t_min;
+		}
+	}
 
-			auto& obj_2 = objects[j];
+	for (auto& obj : objects) obj.move_obj(t_min);
 
-			if (is_collide(obj_1, obj_2)) {
+	for (int i = 0; i < objects.size(); i++) {
+		for (int j = 0; j < 4; j++) {
+			auto& n = border_ns[j];
+			if (t_collide_border[i][j] == t_min) objects[i].vel -= 2 * dot(objects[i].vel, n) * n;
+		}
 
-				float massDiff = obj_1.mass - obj_2.mass, massSum = obj_1.mass + obj_2.mass;
-				sf::Vector2f old_1 = obj_1.vel, old_2 = obj_2.vel;
+		for (int j = i + 1; j < objects.size(); j++) {
+			if(t_collide_ball[i][j] == t_min) {
+				auto& obj_1 = objects[i], & obj_2 = objects[j];
+				sf::Vector2f x = obj_2.pos - obj_1.pos, n = x / norm(x);
+				float mass_ratio = obj_2.mass / obj_1.mass, u = dot(obj_1.vel, n), v = dot(obj_2.vel, n),
+					  c = 2 * (u - v) / (mass_ratio + 1);
 
-				obj_1.vel = (massDiff * old_1 + 2 * obj_2.mass * old_2) / massSum;
-
-				obj_2.vel = (-massDiff * old_2 + 2 * obj_1.mass * old_1) / massSum;
+				obj_1.vel -= mass_ratio * c * n;
+				obj_2.vel += c * n;
 			}
 		}
+	}
+
+	if (dt - t_min > 0) { 
+		calc_vel(dt - t_min); 
 	}
 }
 
@@ -70,10 +102,6 @@ void System::calc_vel(const float& dt) {
 void System::step(sf::Int32 dt) {
 	
 	float ms_dt = dt / 100.;
-
-	for (auto& obj : objects) {
-		obj.move_obj(ms_dt);
-	}
 
 	calc_vel(ms_dt);
 }

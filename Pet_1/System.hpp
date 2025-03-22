@@ -8,6 +8,7 @@ class System {
 private:
 	std::vector<Object> objects;
 	sf::Vector2i border;
+	sf::Vector2f border_ns[4];
 public:
 	System(sf::Vector2i border);
 
@@ -15,9 +16,9 @@ public:
 
 	void calc_vel(const float& dt);
 
-	bool is_collide(const Object& o1, const Object& o2);
+	float is_collide(const Object& o1, const Object& o2, const float& dt);
 
-	sf::Vector2f is_collide_border(const Object& obj);
+	float is_collide_border(const Object& obj, const sf::Vector2f& n, const float& dt);
 
 	void step(sf::Int32 dt);
 

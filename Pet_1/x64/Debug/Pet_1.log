@@ -1,12 +1,625 @@
 ﻿  The vcpkg manifest was disabled, but we found a manifest file in C:\Users\litni\source\repos\Pet_1\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
   Object.cpp
+C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15): error C2678: бинарный "*": не найден оператор, принимающий левый операнд типа "sf::Vector2f" (или приемлемое преобразование отсутствует)
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(292,22):
+      может быть "sf::Time sf::operator *(sf::Time,float)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          "sf::Time sf::operator *(sf::Time,float)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(304,22):
+      или       "sf::Time sf::operator *(sf::Time,sf::Int64)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          "sf::Time sf::operator *(sf::Time,sf::Int64)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(316,22):
+      или       "sf::Time sf::operator *(float,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          "sf::Time sf::operator *(float,sf::Time)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "float"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(328,22):
+      или       "sf::Time sf::operator *(sf::Int64,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          "sf::Time sf::operator *(sf::Int64,sf::Time)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Int64"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(394,29):
+      или       "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(422,28):
+      или       "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Color.hpp(175,25):
+      или       "sf::Color sf::operator *(const sf::Color &,const sf::Color &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          "sf::Color sf::operator *(const sf::Color &,const sf::Color &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Color &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Color"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(160,12):
+      или       "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)": в шаблон параметр "T" неоднозначен
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              может быть "float"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+              или       "double"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          'sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)': не удалось вывести аргумент шаблон для 'T' из 'const float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(173,12):
+      или       "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          'sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'const float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(162,12):
+      или       "sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          'sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'sf::Vector2f'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(175,12):
+      или       "sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+          'sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'const float'
+      C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,15):
+      при попытке сопоставить список аргументов "(sf::Vector2f, const float)"
+  
+C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26): error C2678: бинарный "*": не найден оператор, принимающий левый операнд типа "sf::Vector2f" (или приемлемое преобразование отсутствует)
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(292,22):
+      может быть "sf::Time sf::operator *(sf::Time,float)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          "sf::Time sf::operator *(sf::Time,float)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(304,22):
+      или       "sf::Time sf::operator *(sf::Time,sf::Int64)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          "sf::Time sf::operator *(sf::Time,sf::Int64)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(316,22):
+      или       "sf::Time sf::operator *(float,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          "sf::Time sf::operator *(float,sf::Time)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "float"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(328,22):
+      или       "sf::Time sf::operator *(sf::Int64,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          "sf::Time sf::operator *(sf::Int64,sf::Time)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Int64"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(394,29):
+      или       "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(422,28):
+      или       "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Color.hpp(175,25):
+      или       "sf::Color sf::operator *(const sf::Color &,const sf::Color &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          "sf::Color sf::operator *(const sf::Color &,const sf::Color &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Color &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Color"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(160,12):
+      или       "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)": в шаблон параметр "T" неоднозначен
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              может быть "float"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+              или       "double"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          'sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)': не удалось вывести аргумент шаблон для 'T' из 'const float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(173,12):
+      или       "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          'sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'const float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(162,12):
+      или       "sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          'sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'sf::Vector2f'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(175,12):
+      или       "sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+          'sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'const float'
+      C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(26,26):
+      при попытке сопоставить список аргументов "(sf::Vector2f, const float)"
+  
+C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9): error C2678: бинарный "*": не найден оператор, принимающий левый операнд типа "sf::Vector2f" (или приемлемое преобразование отсутствует)
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(292,22):
+      может быть "sf::Time sf::operator *(sf::Time,float)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          "sf::Time sf::operator *(sf::Time,float)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(304,22):
+      или       "sf::Time sf::operator *(sf::Time,sf::Int64)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          "sf::Time sf::operator *(sf::Time,sf::Int64)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(316,22):
+      или       "sf::Time sf::operator *(float,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          "sf::Time sf::operator *(float,sf::Time)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "float"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(328,22):
+      или       "sf::Time sf::operator *(sf::Int64,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          "sf::Time sf::operator *(sf::Int64,sf::Time)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Int64"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(394,29):
+      или       "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(422,28):
+      или       "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Color.hpp(175,25):
+      или       "sf::Color sf::operator *(const sf::Color &,const sf::Color &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          "sf::Color sf::operator *(const sf::Color &,const sf::Color &)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "const sf::Color &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Причина: невозможно преобразовать "sf::Vector2f" в "const sf::Color"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(160,12):
+      или       "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)": в шаблон параметр "T" неоднозначен
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              может быть "float"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+              или       "double"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          'sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)': не удалось вывести аргумент шаблон для 'T' из 'const float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(173,12):
+      или       "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          'sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'const float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(162,12):
+      или       "sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          'sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'sf::Vector2f'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(175,12):
+      или       "sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+          'sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'const float'
+      C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(31,9):
+      при попытке сопоставить список аргументов "(sf::Vector2f, const float)"
+  
   System.cpp
-C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
-C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244:         with
-C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244:         [
-C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244:             T=float
-C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(39,12): warning C4244:         ]
-C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(72,14): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-  main.cpp
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(13,21): warning C4244: return: преобразование "T" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(13,21): warning C4244:         with
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(13,21): warning C4244:         [
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(13,21): warning C4244:             T=double
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(13,21): warning C4244:         ]
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(23,10): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(23,10): warning C4244:         with
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(23,10): warning C4244:         [
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(23,10): warning C4244:             T=double
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(23,10): warning C4244:         ]
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(26,16): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(27,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(29,12): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(29,12): warning C4244:         with
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(29,12): warning C4244:         [
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(29,12): warning C4244:             T=double
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(29,12): warning C4244:         ]
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(30,9): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(30,9): warning C4244:         with
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(30,9): warning C4244:         [
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(30,9): warning C4244:             T=double
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(30,9): warning C4244:         ]
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244:         with
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244:         [
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244:             T=double
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244:         ]
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(37,10): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(37,10): warning C4244:         with
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(37,10): warning C4244:         [
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(37,10): warning C4244:             T=double
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(37,10): warning C4244:         ]
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61): error C2678: бинарный "*": не найден оператор, принимающий левый операнд типа "float" (или приемлемое преобразование отсутствует)
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(292,22):
+      может быть "sf::Time sf::operator *(sf::Time,float)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          "sf::Time sf::operator *(sf::Time,float)": невозможно преобразовать аргумент 1 из "float" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              Конструктор для class "sf::Time" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(304,22):
+      или       "sf::Time sf::operator *(sf::Time,sf::Int64)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          "sf::Time sf::operator *(sf::Time,sf::Int64)": невозможно преобразовать аргумент 1 из "float" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              Конструктор для class "sf::Time" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(316,22):
+      или       "sf::Time sf::operator *(float,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          "sf::Time sf::operator *(float,sf::Time)": невозможно преобразовать аргумент 2 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,88):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(328,22):
+      или       "sf::Time sf::operator *(sf::Int64,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          "sf::Time sf::operator *(sf::Int64,sf::Time)": невозможно преобразовать аргумент 2 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,88):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(394,29):
+      или       "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              Причина: невозможно преобразовать "float" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              "sf::Transform::Transform": ни одна перегруженная функция не может преобразовать все типы аргументов
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  может быть "sf::Transform::Transform(sf::Transform &&)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                      "sf::Transform::Transform(sf::Transform &&)": невозможно преобразовать аргумент 1 из "float" в "sf::Transform &&"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                          Причина: невозможно преобразовать "float" в "sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  или       "sf::Transform::Transform(const sf::Transform &)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                      "sf::Transform::Transform(const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                          Причина: невозможно преобразовать "float" в "const sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                  при попытке сопоставить список аргументов "(float)"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(422,28):
+      или       "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              Причина: невозможно преобразовать "float" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              "sf::Transform::Transform": ни одна перегруженная функция не может преобразовать все типы аргументов
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  может быть "sf::Transform::Transform(sf::Transform &&)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                      "sf::Transform::Transform(sf::Transform &&)": невозможно преобразовать аргумент 1 из "float" в "sf::Transform &&"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                          Причина: невозможно преобразовать "float" в "sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  или       "sf::Transform::Transform(const sf::Transform &)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                      "sf::Transform::Transform(const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                          Причина: невозможно преобразовать "float" в "const sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+                  при попытке сопоставить список аргументов "(float)"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Color.hpp(175,25):
+      или       "sf::Color sf::operator *(const sf::Color &,const sf::Color &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          "sf::Color sf::operator *(const sf::Color &,const sf::Color &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Color &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              Причина: невозможно преобразовать "float" в "const sf::Color"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              Конструктор для class "sf::Color" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(160,12):
+      или       "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          'sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(173,12):
+      или       "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)": в шаблон параметр "T" неоднозначен
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              может быть "double"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+              или       "float"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          'sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'sf::Vector2f'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(162,12):
+      или       "sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          'sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(175,12):
+      или       "sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+          'sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'sf::Vector2f'
+      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(80,61):
+      при попытке сопоставить список аргументов "(float, sf::Vector2f)"
+  
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49): error C2678: бинарный "/": не найден оператор, принимающий левый операнд типа "sf::Vector2f" (или приемлемое преобразование отсутствует)
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(364,22):
+      может быть "sf::Time sf::operator /(sf::Time,float)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+          "sf::Time sf::operator /(sf::Time,float)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(376,22):
+      или       "sf::Time sf::operator /(sf::Time,sf::Int64)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+          "sf::Time sf::operator /(sf::Time,sf::Int64)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(412,23):
+      или       "float sf::operator /(sf::Time,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+          "float sf::operator /(sf::Time,sf::Time)": невозможно преобразовать аргумент 1 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(202,12):
+      или       "sf::Vector2<T> sf::operator /(const sf::Vector2<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+          "sf::Vector2<T> sf::operator /(const sf::Vector2<T> &,T)": в шаблон параметр "T" неоднозначен
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+              может быть "float"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+              или       "double"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+          'sf::Vector2<T> sf::operator /(const sf::Vector2<T> &,T)': не удалось вывести аргумент шаблон для 'T' из 'float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(204,12):
+      или       "sf::Vector3<T> sf::operator /(const sf::Vector3<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+          'sf::Vector3<T> sf::operator /(const sf::Vector3<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'sf::Vector2f'
+      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(86,49):
+      при попытке сопоставить список аргументов "(sf::Vector2f, float)"
+  
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29): error C2678: бинарный "*": не найден оператор, принимающий левый операнд типа "float" (или приемлемое преобразование отсутствует)
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(292,22):
+      может быть "sf::Time sf::operator *(sf::Time,float)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          "sf::Time sf::operator *(sf::Time,float)": невозможно преобразовать аргумент 1 из "float" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              Конструктор для class "sf::Time" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(304,22):
+      или       "sf::Time sf::operator *(sf::Time,sf::Int64)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          "sf::Time sf::operator *(sf::Time,sf::Int64)": невозможно преобразовать аргумент 1 из "float" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              Конструктор для class "sf::Time" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(316,22):
+      или       "sf::Time sf::operator *(float,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          "sf::Time sf::operator *(float,sf::Time)": невозможно преобразовать аргумент 2 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,35):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(328,22):
+      или       "sf::Time sf::operator *(sf::Int64,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          "sf::Time sf::operator *(sf::Int64,sf::Time)": невозможно преобразовать аргумент 2 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,35):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(394,29):
+      или       "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              Причина: невозможно преобразовать "float" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              "sf::Transform::Transform": ни одна перегруженная функция не может преобразовать все типы аргументов
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  может быть "sf::Transform::Transform(sf::Transform &&)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                      "sf::Transform::Transform(sf::Transform &&)": невозможно преобразовать аргумент 1 из "float" в "sf::Transform &&"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                          Причина: невозможно преобразовать "float" в "sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  или       "sf::Transform::Transform(const sf::Transform &)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                      "sf::Transform::Transform(const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                          Причина: невозможно преобразовать "float" в "const sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                  при попытке сопоставить список аргументов "(float)"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(422,28):
+      или       "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              Причина: невозможно преобразовать "float" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              "sf::Transform::Transform": ни одна перегруженная функция не может преобразовать все типы аргументов
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  может быть "sf::Transform::Transform(sf::Transform &&)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                      "sf::Transform::Transform(sf::Transform &&)": невозможно преобразовать аргумент 1 из "float" в "sf::Transform &&"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                          Причина: невозможно преобразовать "float" в "sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  или       "sf::Transform::Transform(const sf::Transform &)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                      "sf::Transform::Transform(const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                          Причина: невозможно преобразовать "float" в "const sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+                  при попытке сопоставить список аргументов "(float)"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Color.hpp(175,25):
+      или       "sf::Color sf::operator *(const sf::Color &,const sf::Color &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          "sf::Color sf::operator *(const sf::Color &,const sf::Color &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Color &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              Причина: невозможно преобразовать "float" в "const sf::Color"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              Конструктор для class "sf::Color" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(160,12):
+      или       "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          'sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(173,12):
+      или       "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)": в шаблон параметр "T" неоднозначен
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              может быть "double"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+              или       "float"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          'sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'sf::Vector2f'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(162,12):
+      или       "sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          'sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(175,12):
+      или       "sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+          'sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'sf::Vector2f'
+      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(90,29):
+      при попытке сопоставить список аргументов "(float, sf::Vector2f)"
+  
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18): error C2678: бинарный "*": не найден оператор, принимающий левый операнд типа "float" (или приемлемое преобразование отсутствует)
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(292,22):
+      может быть "sf::Time sf::operator *(sf::Time,float)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          "sf::Time sf::operator *(sf::Time,float)": невозможно преобразовать аргумент 1 из "float" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              Конструктор для class "sf::Time" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(304,22):
+      или       "sf::Time sf::operator *(sf::Time,sf::Int64)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          "sf::Time sf::operator *(sf::Time,sf::Int64)": невозможно преобразовать аргумент 1 из "float" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              Конструктор для class "sf::Time" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(316,22):
+      или       "sf::Time sf::operator *(float,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          "sf::Time sf::operator *(float,sf::Time)": невозможно преобразовать аргумент 2 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,22):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Time.hpp(328,22):
+      или       "sf::Time sf::operator *(sf::Int64,sf::Time)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          "sf::Time sf::operator *(sf::Int64,sf::Time)": невозможно преобразовать аргумент 2 из "sf::Vector2f" в "sf::Time"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,22):
+              Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(394,29):
+      или       "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          "sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              Причина: невозможно преобразовать "float" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              "sf::Transform::Transform": ни одна перегруженная функция не может преобразовать все типы аргументов
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  может быть "sf::Transform::Transform(sf::Transform &&)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                      "sf::Transform::Transform(sf::Transform &&)": невозможно преобразовать аргумент 1 из "float" в "sf::Transform &&"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                          Причина: невозможно преобразовать "float" в "sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  или       "sf::Transform::Transform(const sf::Transform &)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                      "sf::Transform::Transform(const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                          Причина: невозможно преобразовать "float" в "const sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                  при попытке сопоставить список аргументов "(float)"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(422,28):
+      или       "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          "sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              Причина: невозможно преобразовать "float" в "const sf::Transform"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              "sf::Transform::Transform": ни одна перегруженная функция не может преобразовать все типы аргументов
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  может быть "sf::Transform::Transform(sf::Transform &&)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                      "sf::Transform::Transform(sf::Transform &&)": невозможно преобразовать аргумент 1 из "float" в "sf::Transform &&"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                          Причина: невозможно преобразовать "float" в "sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Transform.hpp(380,1):
+                  или       "sf::Transform::Transform(const sf::Transform &)"
+                      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                      "sf::Transform::Transform(const sf::Transform &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Transform &"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                          Причина: невозможно преобразовать "float" в "const sf::Transform"
+                          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                          Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+                  C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+                  при попытке сопоставить список аргументов "(float)"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\Graphics\Color.hpp(175,25):
+      или       "sf::Color sf::operator *(const sf::Color &,const sf::Color &)" [найдено при поиске с зависимостью от аргументов]
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          "sf::Color sf::operator *(const sf::Color &,const sf::Color &)": невозможно преобразовать аргумент 1 из "float" в "const sf::Color &"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              Причина: невозможно преобразовать "float" в "const sf::Color"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              Конструктор для class "sf::Color" объявлен как "explicit"
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(160,12):
+      или       "sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          'sf::Vector2<T> sf::operator *(const sf::Vector2<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector2.hpp(173,12):
+      или       "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          "sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)": в шаблон параметр "T" неоднозначен
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              может быть "double"
+              C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+              или       "float"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          'sf::Vector2<T> sf::operator *(T,const sf::Vector2<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector2<T> &' из 'sf::Vector2f'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(162,12):
+      или       "sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          'sf::Vector3<T> sf::operator *(const sf::Vector3<T> &,T)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'float'
+      Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include\SFML\System\Vector3.hpp(175,12):
+      или       "sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)"
+          C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+          'sf::Vector3<T> sf::operator *(T,const sf::Vector3<T> &)': не удалось вывести аргумент шаблон для 'const sf::Vector3<T> &' из 'sf::Vector2f'
+      C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(91,18):
+      при попытке сопоставить список аргументов "(float, sf::Vector2f)"
+  
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(104,14): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
   Создание кода...
-  Pet_1.vcxproj -> C:\Users\litni\source\repos\Pet_1\x64\Debug\Pet_1.exe

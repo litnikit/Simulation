@@ -1,0 +1,62 @@
+﻿  The vcpkg manifest was disabled, but we found a manifest file in C:\Users\litni\source\repos\Pet_1\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  main.cpp
+  Object.cpp
+C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(53,19): warning C4244: аргумент: преобразование "const double" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(54,24): warning C4244: аргумент: преобразование "const double" в "float", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\Object.cpp(54,19): warning C4244: аргумент: преобразование "const double" в "float", возможна потеря данных
+  System.cpp
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244:         with
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244:         [
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244:             T=double
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(36,10): warning C4244:         ]
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(63,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(69,25): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(77,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\litni\source\repos\Pet_1\Pet_1\System.cpp(83,25): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: int __thiscall sf::Time::asMilliseconds(void)const " (__imp_?asMilliseconds@Time@sf@@QBEHXZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QAE@XZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::getElapsedTime(void)const " (__imp_?getElapsedTime@Clock@sf@@QBE?AVTime@2@XZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::restart(void)" (__imp_?restart@Clock@sf@@QAE?AVTime@2@XZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QAE@III@Z) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: bool __thiscall sf::WindowBase::isOpen(void)const " (__imp_?isOpen@WindowBase@sf@@QBE_NXZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: bool __thiscall sf::WindowBase::pollEvent(class sf::Event &)" (__imp_?pollEvent@WindowBase@sf@@QAE_NAAVEvent@2@@Z) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: virtual void __thiscall sf::Window::close(void)" (__imp_?close@Window@sf@@UAEXXZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __thiscall sf::Window::display(void)" (__imp_?display@Window@sf@@QAEXXZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: virtual __thiscall sf::CircleShape::~CircleShape(void)" (__imp_??1CircleShape@sf@@UAE@XZ) в функции "public: __thiscall Object::~Object(void)" (??1Object@@QAE@XZ).
+Object.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual __thiscall sf::CircleShape::~CircleShape(void)" (__imp_??1CircleShape@sf@@UAE@XZ).
+System.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: virtual __thiscall sf::CircleShape::~CircleShape(void)" (__imp_??1CircleShape@sf@@UAE@XZ).
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __thiscall sf::RenderTarget::clear(class sf::Color const &)" (__imp_?clear@RenderTarget@sf@@QAEXABVColor@2@@Z) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::Black" (__imp_?Black@Color@sf@@2V12@B) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::Red" (__imp_?Red@Color@sf@@2V12@B) в функции _main.
+Object.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::Red" (__imp_?Red@Color@sf@@2V12@B).
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::Green" (__imp_?Green@Color@sf@@2V12@B) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::Blue" (__imp_?Blue@Color@sf@@2V12@B) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::Yellow" (__imp_?Yellow@Color@sf@@2V12@B) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: static class sf::Color const sf::Color::Magenta" (__imp_?Magenta@Color@sf@@2V12@B) в функции _main.
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<double> const &)" (__imp_?setPosition@Transformable@sf@@QAEXABV?$Vector2@N@2@@Z) в функции "public: void __thiscall Object::move_obj(double const &)" (?move_obj@Object@@QAEXABN@Z).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __thiscall sf::Transformable::setOrigin(float,float)" (__imp_?setOrigin@Transformable@sf@@QAEXMM@Z) в функции "public: __thiscall Object::Object(void)" (??0Object@@QAE@XZ).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class sf::Vector2<double> const & __thiscall sf::Transformable::getPosition(void)const " (__imp_?getPosition@Transformable@sf@@QBEABV?$Vector2@N@2@XZ) в функции "public: class Object __thiscall ObjectBuilder::build(void)" (?build@ObjectBuilder@@QAE?AVObject@@XZ).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __thiscall sf::Shape::setFillColor(class sf::Color const &)" (__imp_?setFillColor@Shape@sf@@QAEXABVColor@2@@Z) в функции "public: __thiscall Object::Object(void)" (??0Object@@QAE@XZ).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::CircleShape::CircleShape(float,unsigned int)" (__imp_??0CircleShape@sf@@QAE@MI@Z) в функции "public: __thiscall Object::Object(void)" (??0Object@@QAE@XZ).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __thiscall sf::CircleShape::setRadius(float)" (__imp_?setRadius@CircleShape@sf@@QAEXM@Z) в функции "public: __thiscall Object::Object(void)" (??0Object@@QAE@XZ).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: float __thiscall sf::CircleShape::getRadius(void)const " (__imp_?getRadius@CircleShape@sf@@QBEMXZ) в функции "public: class Object __thiscall ObjectBuilder::build(void)" (?build@ObjectBuilder@@QAE?AVObject@@XZ).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::CircleShape::CircleShape(class sf::CircleShape const &)" (__imp_??0CircleShape@sf@@QAE@ABV01@@Z) в функции "private: __thiscall Object::Object(class sf::Vector2<double> const &,class sf::Vector2<double> const &,class sf::Vector2<double> const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::CircleShape const &,double const &,double const &)" (??0Object@@AAE@ABV?$Vector2@N@sf@@00ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABVCircleShape@2@ABN3@Z).
+System.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::CircleShape::CircleShape(class sf::CircleShape const &)" (__imp_??0CircleShape@sf@@QAE@ABV01@@Z).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z) в функции "public: void __thiscall Object::draw_obj(class sf::RenderWindow &)" (?draw_obj@Object@@QAEXAAVRenderWindow@sf@@@Z).
+System.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABVRenderStates@2@@Z).
+Object.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: static class sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2V12@B) в функции "public: void __thiscall Object::draw_obj(class sf::RenderWindow &)" (?draw_obj@Object@@QAEXAAVRenderWindow@sf@@@Z).
+System.obj : error LNK2001: неразрешенный внешний символ "__declspec(dllimport) public: static class sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2V12@B).
+System.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __thiscall sf::CircleShape::CircleShape(class sf::CircleShape &&)" (__imp_??0CircleShape@sf@@QAE@$$QAV01@@Z) в функции "public: __thiscall Object::Object(class Object &&)" (??0Object@@QAE@$$QAV0@@Z).
+Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib\sfml-graphics-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib\sfml-window-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib\sfml-audio-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib\sfml-system-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+Z:\Games\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib\sfml-network-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+C:\Users\litni\source\repos\Pet_1\Debug\Pet_1.exe : fatal error LNK1120: неразрешенных внешних элементов: 33
